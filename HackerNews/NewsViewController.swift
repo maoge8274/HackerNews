@@ -43,7 +43,9 @@ class NewsViewController: UITableViewController {
     }
     
     func onRightButton(){
+        let navCategories = self.storyboard?.instantiateViewControllerWithIdentifier("categoriesNavigationController") as! UINavigationController
         
+//        let categoriesVC = navCategories.visibleViewController as! CategoriesV
     }
 }
 

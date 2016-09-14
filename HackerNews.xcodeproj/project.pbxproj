@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		702BF2E81D8950DB00F1639A /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702BF2E71D8950DB00F1639A /* UIColorExt.swift */; };
+		702BF2EA1D895CDC00F1639A /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702BF2E91D895CDC00F1639A /* CategoriesViewController.swift */; };
 		70EFEE741D885BFB00BB3A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFEE731D885BFB00BB3A1D /* AppDelegate.swift */; };
 		70EFEE761D885BFB00BB3A1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFEE751D885BFB00BB3A1D /* ViewController.swift */; };
 		70EFEE791D885BFB00BB3A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EFEE771D885BFB00BB3A1D /* Main.storyboard */; };
@@ -83,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		702BF2E71D8950DB00F1639A /* UIColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		702BF2E91D895CDC00F1639A /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		70EFEE701D885BFB00BB3A1D /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EFEE731D885BFB00BB3A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70EFEE751D885BFB00BB3A1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				70EFEEA21D885F2D00BB3A1D /* SplitViewController.swift */,
 				70EFEEA41D88D6A800BB3A1D /* NewsViewController.swift */,
 				70EFEEA61D88DBA600BB3A1D /* WebviewController.swift */,
+				702BF2E91D895CDC00F1639A /* CategoriesViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				70EFEE741D885BFB00BB3A1D /* AppDelegate.swift in Sources */,
 				70EFEEA31D885F2D00BB3A1D /* SplitViewController.swift in Sources */,
 				70EFEEA51D88D6A800BB3A1D /* NewsViewController.swift in Sources */,
+				702BF2EA1D895CDC00F1639A /* CategoriesViewController.swift in Sources */,
 				70EFEEA71D88DBA600BB3A1D /* WebviewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

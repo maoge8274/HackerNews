@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BC09958E5F7EB0CEBB6F6C543FDC7E91E21066BC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BC09958E5F7EB0CEBB6F6C543FDC7E91E21066BC" : 0,
+    "541EB4B1AD0BBC5F9CCC26DFBCF11E6E1042C1B3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1D2F9642-6CE3-41E8-A155-06843EF19996",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BC09958E5F7EB0CEBB6F6C543FDC7E91E21066BC" : "HackerNews\/",
+    "541EB4B1AD0BBC5F9CCC26DFBCF11E6E1042C1B3" : "HackerNews\/HackerNews\/libs\/HackerServiceSwift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HackerNews",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HackerNews.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/maoge8274\/HackerServiceSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "541EB4B1AD0BBC5F9CCC26DFBCF11E6E1042C1B3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/maoge8274\/HackerNews.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC09958E5F7EB0CEBB6F6C543FDC7E91E21066BC"
+    }
+  ]
+}
