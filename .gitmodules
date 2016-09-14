@@ -1,0 +1,3 @@
+[submodule "HackerNews/libs/HackerServiceSwift"]
+	path = HackerNews/libs/HackerServiceSwift
+	url = https://github.com/maoge8274/HackerServiceSwift.git
