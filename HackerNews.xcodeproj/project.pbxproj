@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		702BF2E81D8950DB00F1639A /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702BF2E71D8950DB00F1639A /* UIColorExt.swift */; };
 		70EFEE741D885BFB00BB3A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFEE731D885BFB00BB3A1D /* AppDelegate.swift */; };
 		70EFEE761D885BFB00BB3A1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFEE751D885BFB00BB3A1D /* ViewController.swift */; };
 		70EFEE791D885BFB00BB3A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EFEE771D885BFB00BB3A1D /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 		70EFEEA31D885F2D00BB3A1D /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFEEA21D885F2D00BB3A1D /* SplitViewController.swift */; };
 		70EFEEA51D88D6A800BB3A1D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFEEA41D88D6A800BB3A1D /* NewsViewController.swift */; };
 		70EFEEA71D88DBA600BB3A1D /* WebviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFEEA61D88DBA600BB3A1D /* WebviewController.swift */; };
+		70EFEF201D8948E500BB3A1D /* HackerServiceSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EFEF151D89430100BB3A1D /* HackerServiceSwift.framework */; };
+		70EFEF211D8948E500BB3A1D /* HackerServiceSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70EFEF151D89430100BB3A1D /* HackerServiceSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,52 @@
 			remoteGlobalIDString = 70EFEE6F1D885BFB00BB3A1D;
 			remoteInfo = HackerNews;
 		};
+		70EFEF141D89430100BB3A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70EFEF0F1D89430100BB3A1D /* HackerServiceSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70EFEEEC1D89128A00BB3A1D;
+			remoteInfo = HackerServiceSwift;
+		};
+		70EFEF161D89430100BB3A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70EFEF0F1D89430100BB3A1D /* HackerServiceSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70EFEEF61D89128A00BB3A1D;
+			remoteInfo = HackerServiceSwiftTests;
+		};
+		70EFEF1B1D89454F00BB3A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70EFEF0F1D89430100BB3A1D /* HackerServiceSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 70EFEEEB1D89128A00BB3A1D;
+			remoteInfo = HackerServiceSwift;
+		};
+		70EFEF221D8948E500BB3A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70EFEF0F1D89430100BB3A1D /* HackerServiceSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 70EFEEEB1D89128A00BB3A1D;
+			remoteInfo = HackerServiceSwift;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		70EFEF241D8948E500BB3A1D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				70EFEF211D8948E500BB3A1D /* HackerServiceSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		702BF2E71D8950DB00F1639A /* UIColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		70EFEE701D885BFB00BB3A1D /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EFEE731D885BFB00BB3A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70EFEE751D885BFB00BB3A1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +99,7 @@
 		70EFEEA21D885F2D00BB3A1D /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		70EFEEA41D88D6A800BB3A1D /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		70EFEEA61D88DBA600BB3A1D /* WebviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewController.swift; sourceTree = "<group>"; };
+		70EFEF0F1D89430100BB3A1D /* HackerServiceSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HackerServiceSwift.xcodeproj; path = HackerNews/libs/HackerServiceSwift/HackerServiceSwift.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EFEF201D8948E500BB3A1D /* HackerServiceSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +128,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		702BF2E51D8950AA00F1639A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				702BF2E71D8950DB00F1639A /* UIColorExt.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		70EFEE671D885BFB00BB3A1D = {
 			isa = PBXGroup;
 			children = (
+				70EFEF0F1D89430100BB3A1D /* HackerServiceSwift.xcodeproj */,
 				70EFEE721D885BFB00BB3A1D /* HackerNews */,
 				70EFEE871D885BFB00BB3A1D /* HackerNewsTests */,
 				70EFEE921D885BFB00BB3A1D /* HackerNewsUITests */,
@@ -103,6 +160,7 @@
 		70EFEE721D885BFB00BB3A1D /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				702BF2E51D8950AA00F1639A /* Extensions */,
 				70EFEEA11D885F1100BB3A1D /* ViewController */,
 				70EFEE731D885BFB00BB3A1D /* AppDelegate.swift */,
 				70EFEE751D885BFB00BB3A1D /* ViewController.swift */,
@@ -142,6 +200,15 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
+		70EFEF101D89430100BB3A1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70EFEF151D89430100BB3A1D /* HackerServiceSwift.framework */,
+				70EFEF171D89430100BB3A1D /* HackerServiceSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,10 +219,13 @@
 				70EFEE6C1D885BFB00BB3A1D /* Sources */,
 				70EFEE6D1D885BFB00BB3A1D /* Frameworks */,
 				70EFEE6E1D885BFB00BB3A1D /* Resources */,
+				70EFEF241D8948E500BB3A1D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				70EFEF1C1D89454F00BB3A1D /* PBXTargetDependency */,
+				70EFEF231D8948E500BB3A1D /* PBXTargetDependency */,
 			);
 			name = HackerNews;
 			productName = HackerNews;
@@ -231,6 +301,12 @@
 			mainGroup = 70EFEE671D885BFB00BB3A1D;
 			productRefGroup = 70EFEE711D885BFB00BB3A1D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 70EFEF101D89430100BB3A1D /* Products */;
+					ProjectRef = 70EFEF0F1D89430100BB3A1D /* HackerServiceSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				70EFEE6F1D885BFB00BB3A1D /* HackerNews */,
@@ -239,6 +315,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		70EFEF151D89430100BB3A1D /* HackerServiceSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HackerServiceSwift.framework;
+			remoteRef = 70EFEF141D89430100BB3A1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70EFEF171D89430100BB3A1D /* HackerServiceSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HackerServiceSwiftTests.xctest;
+			remoteRef = 70EFEF161D89430100BB3A1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		70EFEE6E1D885BFB00BB3A1D /* Resources */ = {
@@ -273,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70EFEE761D885BFB00BB3A1D /* ViewController.swift in Sources */,
+				702BF2E81D8950DB00F1639A /* UIColorExt.swift in Sources */,
 				70EFEE741D885BFB00BB3A1D /* AppDelegate.swift in Sources */,
 				70EFEEA31D885F2D00BB3A1D /* SplitViewController.swift in Sources */,
 				70EFEEA51D88D6A800BB3A1D /* NewsViewController.swift in Sources */,
@@ -308,6 +402,16 @@
 			isa = PBXTargetDependency;
 			target = 70EFEE6F1D885BFB00BB3A1D /* HackerNews */;
 			targetProxy = 70EFEE901D885BFB00BB3A1D /* PBXContainerItemProxy */;
+		};
+		70EFEF1C1D89454F00BB3A1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HackerServiceSwift;
+			targetProxy = 70EFEF1B1D89454F00BB3A1D /* PBXContainerItemProxy */;
+		};
+		70EFEF231D8948E500BB3A1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HackerServiceSwift;
+			targetProxy = 70EFEF221D8948E500BB3A1D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -420,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HackerNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uiitop.HackerNews;
@@ -431,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HackerNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uiitop.HackerNews;
@@ -503,6 +609,7 @@
 				70EFEE9A1D885BFB00BB3A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70EFEE9B1D885BFB00BB3A1D /* Build configuration list for PBXNativeTarget "HackerNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +618,7 @@
 				70EFEE9D1D885BFB00BB3A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70EFEE9E1D885BFB00BB3A1D /* Build configuration list for PBXNativeTarget "HackerNewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +627,7 @@
 				70EFEEA01D885BFB00BB3A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
