@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l02-9o-ezS">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Webview Controller-->
+        <scene sceneID="VTz-mj-AFq">
+            <objects>
+                <viewController storyboardIdentifier="WebviewController" id="n3R-vr-BWX" customClass="WebviewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9uo-gi-4ah"/>
+                        <viewControllerLayoutGuide type="bottom" id="bRW-4P-M3m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UEV-6K-Ymb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8GT-ez-6EZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" calendarEvent="YES"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8GT-ez-6EZ" firstAttribute="top" secondItem="UEV-6K-Ymb" secondAttribute="top" id="8jl-55-tMk"/>
+                            <constraint firstAttribute="trailing" secondItem="8GT-ez-6EZ" secondAttribute="trailing" id="Jia-w0-Bxg"/>
+                            <constraint firstItem="8GT-ez-6EZ" firstAttribute="leading" secondItem="UEV-6K-Ymb" secondAttribute="leading" id="dpu-WQ-547"/>
+                            <constraint firstItem="8GT-ez-6EZ" firstAttribute="bottom" secondItem="bRW-4P-M3m" secondAttribute="top" id="u9K-75-HHy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="8GT-ez-6EZ" id="upK-lb-ZzQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2F-Yv-zMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="541"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="6Or-4Z-tWx">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="KOr-sv-uKF" customClass="NewsViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4wU-Ac-JVc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oqg-Ug-TfQ">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oqg-Ug-TfQ" id="0vH-Cc-rmU">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KOr-sv-uKF" id="6S4-VQ-u5I"/>
+                            <outlet property="delegate" destination="KOr-sv-uKF" id="qhI-Gj-DSG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Hgs-2T-haN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Knj-dR-TVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="-178"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2AF-Ka-I9E">
+            <objects>
+                <navigationController id="sqi-ao-wfh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kih-yZ-waz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KOr-sv-uKF" kind="relationship" relationship="rootViewController" id="m3i-Sd-iPm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZyL-di-91p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739" y="-178"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="YZE-xg-eaZ">
+            <objects>
+                <splitViewController id="l02-9o-ezS" customClass="SplitViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="sqi-ao-wfh" kind="relationship" relationship="masterViewController" id="y1E-T8-Frx"/>
+                        <segue destination="n3R-vr-BWX" kind="relationship" relationship="detailViewController" id="8JG-w6-f5V"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deI-hS-yiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="153"/>
+        </scene>
+    </scenes>
+</document>
