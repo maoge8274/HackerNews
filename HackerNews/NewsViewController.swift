@@ -16,3 +16,4 @@ class NewsViewController: UITableViewController {
         self.title = "HN:News"
     }
 }
+
