@@ -10,7 +10,7 @@ import UIKit
 import HackerServiceSwift
 
 
-class NewsViewController: UITableViewController {
+class NewsViewController: HNTableViewController,CategoriesViewControllerDelegate {
     
     var filter:Post.PostFilter = .Top
     var loadMoreEnabled = false
@@ -45,7 +45,49 @@ class NewsViewController: UITableViewController {
     func onRightButton(){
         let navCategories = self.storyboard?.instantiateViewControllerWithIdentifier("categoriesNavigationController") as! UINavigationController
         
-//        let categoriesVC = navCategories.visibleViewController as! CategoriesV
+        let categoriesVC = navCategories.visibleViewController as! CategoriesViewController
+        categoriesVC.delegate = self
+        navCategories.modalPresentationStyle = UIModalPresentationStyle.Popover
+        
+        
+        
     }
+    
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(NewsCellsId) as? NewsCell
+        cell!.post = self.datasource[indexPath.row] as! Post
+//        cell!.cellDelegate = self
+        if (loadMoreEnabled && indexPath.row == self.datasource.count-3) {
+            self.tableView.tableFooterView = self.infiniteScrollingView
+            loadMore()
+        }
+        return cell!
+    }
+    
+    func loadMore(){
+        
+    }
+    
+    func categoriesViewControllerDidSelecteFilter(controller: CategoriesViewController, filer: Post.PostFilter, title: String) {
+        self.filter = filer
+        self.datasource = nil
+//        self.onPullToFresh()
+        self.title = title
+    }
+    
+    func onPullToFresh() {
+        self.refreshing = true
+        
+//        Post.fet
+        
+    }
+
+    
 }
 
